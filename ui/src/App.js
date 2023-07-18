@@ -1,9 +1,10 @@
 import './App.css';
+import ContractUI from './components/contractUI';
 
 function App() {
   return (
     <div className="App">
-      <h1>Solidty CTF Template</h1>
+      <ContractUI />
     </div>
   );
 }
