@@ -10,7 +10,6 @@ export default function ContractUI() {
         try {
             const { ethereum } = window;
             if(ethereum) {
-                // const provider = new ethers.JsonRpcProvider(ethereum);
                 const provider = new ethers.providers.Web3Provider(ethereum)
                 await provider.send("eth_requestAccounts", []);
                 // console.log('provider: ', provider)
